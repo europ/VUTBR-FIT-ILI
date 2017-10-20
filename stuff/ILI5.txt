@@ -1,0 +1,125 @@
+Ukol 1
+touch /tmp/myscript
+chmod +x /tmp/myscriptr
+vim /tmp/myscript
+
+#!/usr/bin/bash
+echo "HELLO" >> /tmp/hello.txt
+
+----------------------------------- 
+
+touch /etc/systemd/system/hello.service
+vim /etc/systemd/system/hello.service
+[Unit]
+Description=Baz Service
+
+[Service]
+Type=simple
+ExecStart=/tmp/hello
+StandardError=journal
+TimeoutStopSec=5
+
+------------------------------
+
+systemctl start hello.socket
+systemctl status hello.socket
+
+cat /tmp/hello
+---------------------------
+
+
+Ukol 2
+touch /etc/systemd/system/baz.socket
+vim /etc/systemd/system/baz.socket
+
+[Unit]
+Description=Baz Socket
+
+[Socket]
+ListenStream=127.0.0.1:9999
+Accept=yes
+
+[Install]
+WantedBy=sockets.target
+-----------------------------------
+
+touch /etc/systemd/system/baz@.service
+vim /etc/systemd/system/baz@.service
+[Unit]
+Description=Baz Service
+Requires=baz.socket
+
+[Service]
+Type=simple
+ExecStart=/tmp/myscript
+StandardInput=socket
+StandardError=journal
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target
+-----------------------------------
+
+touch /tmp/myscript
+vim /tmp/myscript
+
+#!/usr/bin/bash
+
+date >> /tmp/datenow.txt
+
+
+systemctl start baz.socket
+systemctl status baz.socket
+------------------------------
+
+telnet localhost 9999
+
+-----------------------------
+
+
+Ukol 3
+
+fallocate -l 100M loop-dev0
+fallocate -l 100M loop-dev1
+fallocate -l 100M loop-dev2
+
+fallocate -f loop-dev0
+fallocate -f loop-dev1
+fallocate -f loop-dev2
+
+fallocate -a
+
+mdadm --create --verbose /dev/md0 -l 5 -n 3 /dev/loop0 /dev/loop1 /dev/loop2
+
+mkfs.ext4 /dev/md0
+----------------------------------- 
+
+touch /etc/systemd/system/raid.service
+vim /etc/systemd/system/raid.service
+[Unit]
+Description=Baz Service
+
+[Service]
+Type=simple
+ExecStart=/tmp/raid
+StandardError=journal
+TimeoutStopSec=5
+
+-------------------------
+
+touch /tmp/raid
+vim /tmp/raid
+
+#!/usr/bin/bash
+
+fallocate -f loop-dev0
+fallocate -f loop-dev1
+fallocate -f loop-dev2
+
+------------------------------
+
+systemctl start raid.socket
+systemctl status raid.socket
+
+
+shutdown -r now
