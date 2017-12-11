@@ -18,4 +18,4 @@
 ### [10](https://www.clusterlabs.org/doc/en-US/Pacemaker/1.1-pcs/html/Clusters_from_Scratch/) Clusters from Scratch (A) (Fencing)
 ### [11](https://github.com/europ/VUTBR-FIT-ILI/blob/master/11.md) Docker
 ### [12](https://github.com/europ/VUTBR-FIT-ILI/blob/master/12.md) Revision
-### [13](https://github.com/europ/VUTBR-FIT-ILI/blob/master/13.md) Incoming
+### [13](https://github.com/europ/VUTBR-FIT-ILI/blob/master/13.md) Exam
