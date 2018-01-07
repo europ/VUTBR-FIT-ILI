@@ -1,6 +1,6 @@
 # FTP
 
-1. Setup a VM ([example](https://github.com/europ/VUTBR-FIT-ILI/blob/master/setup.md))
+1. Setup a VM ([example](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/setup.md))
 
 2. Run and login into `VM1`
 
