@@ -13,7 +13,7 @@
 * Prepare mount of this NFS mount point on both of the nodes
     * They should be mounted manually via command 'mount /mnt/nfsdata'
 * Run Apache on top of the cluster
-    * Content should not be available from host machine (preferably se firewalld)
+    * Content should not be available from host machine (preferably use firewalld)
 
 ## 3. Storage (25%)
 * Use only loopback disks
