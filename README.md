@@ -18,3 +18,4 @@
 ### [13](https://github.com/europ/VUTBR-FIT-ILI/blob/master/exercises/13.md) Exam
 ### [xx](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam2.md) Exam
 ### [yy](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam3.md) Exam
+### [zz](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam4.md) Exam
