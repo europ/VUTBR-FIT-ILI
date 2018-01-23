@@ -1,14 +1,14 @@
 # EXAM
-16.1.2018
+23.1.2018
 
 ## 1. Installation of virtual machines from scratch (30%)
 * Enabled SELinux with targeted policy
 * Root password is set to asdf
 * Two virtual machines accessible via the names ice and snow
-* Use loopback disks only
+* You can use 'real' disks in virtual machine
 
 ## 2. Storage (30%)
-* Create systemd unit file (with templates) to start existing loopback devices
+* Create mirror disks (same data are on two disks)
 * Data are encrypted and they are open automatically during reboot
 * Export data to both of the nodes so they can see same content of same block device
 * Do not attempt to make it fail-over

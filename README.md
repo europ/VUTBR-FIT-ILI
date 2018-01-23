@@ -16,6 +16,7 @@
 ### [11](https://github.com/europ/VUTBR-FIT-ILI/blob/master/exercises/11.md) Docker
 ### [12](https://github.com/europ/VUTBR-FIT-ILI/blob/master/exercises/12.md) Revision
 ### [13](https://github.com/europ/VUTBR-FIT-ILI/blob/master/exercises/13.md) Exam
-### [xx](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam2.md) Exam
-### [yy](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam3.md) Exam
-### [zz](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam4.md) Exam
+### [vv](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam2.md) Exam
+### [xx](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam3.md) Exam
+### [yy](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam4.md) Exam
+### [zz](https://github.com/europ/VUTBR-FIT-ILI/blob/master/other/exam5.md) Exam
